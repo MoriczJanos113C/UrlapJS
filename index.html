@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" 
+      type="image/png" 
+      href="kep.png">
+    <title>ŰrlapJs</title>
+</head>
+<body>
+    <h1>Egy kis programozás javascript-el</h1>
+    <script>
+        function szamolas()
+        {
+            var ev = document.korszamitas.szulev.value*1;
+            document.korszamitas.kor.value = 2020-ev;
+        }
+    </script>
+    <form name="korszamitas"> 
+        <font>Születési éved: </font><input type="text" name="szulev">
+        <br>
+        <input type="button" value="Számol" onClick="szamolas()">
+        <br>
+        <font>Az életkorod: </font><input type="text" name="kor"><font> éves vagy :)</font>
+        <br>
+        <input type="reset" value="Törlés">
+
+    </form>
+    <br>
+    <form action="#">
+        <fieldset>
+            <legend>Személyes adatlap</legend>
+            <div>
+        <font>Név: </font><input type="text" name="név">
+        <br>
+        <font>Ilyen vagyok:</font>
+        <br>
+        <font>Nemem: </font>
+        <br>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Férfi</label>
+        <br>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Nő</label>
+        <br>
+        <form action="/action_page.php">
+            <label for="hobbi">Hobbim:</label>
+            <select id="hobbi" name="hobbi">
+              <option value="irodalmar">Irodalmár</option>
+              <option value="tortenesz">Történész</option>
+              <option value="matek">Matek</option>
+              <option value="egyeb">Egyéb</option>
+            </select>
+            <br>
+            <font>Mobiltelefon-szolgáltatóm:</font>
+            <form action="/action_page.php">
+                <br>
+                <input type="checkbox" id="vehicle1" name="Telekom" value="Telekom">
+                <label for="vehicle1"> Telekom</label><br>
+                <input type="checkbox" id="vehicle2" name="Telenor" value="Telenor">
+                <label for="vehicle2"> Telenor</label><br>
+                <input type="checkbox" id="vehicle3" name="VodafonUPC" value="VodafonUPC">
+                <label for="vehicle3"> Vodafon + UPC</label>
+                <br>
+                <input type="checkbox" id="vehicle4" name="Digi" value="Digi">
+                <label for="vehicle4"> Digi</label><br>
+                <font>Email-cím: </font><input type="text" name="email">
+                <br>
+                <font>Jelszó: </font><input type="password" name="jelszo">
+                <br>
+                <input type="submit" value="Küldés">
+                <input type="reset" value="Törlés">
+            </div>
+            </form>
+        </form>
+    </fieldset>
+</body>
+</html>
